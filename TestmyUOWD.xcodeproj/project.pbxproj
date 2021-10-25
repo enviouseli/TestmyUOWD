@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EF39DBB907E356A90DEB5FD /* Pods_TestmyUOWD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157644446DE34D118CBAD5AF /* Pods_TestmyUOWD.framework */; };
 		4198F10727253F470060325A /* TestmyUOWDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198F10627253F470060325A /* TestmyUOWDApp.swift */; };
 		4198F10927253F470060325A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198F10827253F470060325A /* ContentView.swift */; };
 		4198F10B27253F480060325A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198F10A27253F480060325A /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157644446DE34D118CBAD5AF /* Pods_TestmyUOWD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestmyUOWD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4198F10327253F470060325A /* TestmyUOWD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestmyUOWD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4198F10627253F470060325A /* TestmyUOWDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestmyUOWDApp.swift; sourceTree = "<group>"; };
 		4198F10827253F470060325A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4198F10A27253F480060325A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4198F10D27253F480060325A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		710B1290F23A537A8822EC8E /* Pods-TestmyUOWD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestmyUOWD.release.xcconfig"; path = "Target Support Files/Pods-TestmyUOWD/Pods-TestmyUOWD.release.xcconfig"; sourceTree = "<group>"; };
+		D510D74E5A828345AB3E305A /* Pods-TestmyUOWD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestmyUOWD.debug.xcconfig"; path = "Target Support Files/Pods-TestmyUOWD/Pods-TestmyUOWD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF39DBB907E356A90DEB5FD /* Pods_TestmyUOWD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06772B2A0E2D83111D28DF9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157644446DE34D118CBAD5AF /* Pods_TestmyUOWD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4198F0FA27253F470060325A = {
 			isa = PBXGroup;
 			children = (
 				4198F10527253F470060325A /* TestmyUOWD */,
 				4198F10427253F470060325A /* Products */,
+				7015707C05CCF0A0281309E0 /* Pods */,
+				06772B2A0E2D83111D28DF9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7015707C05CCF0A0281309E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D510D74E5A828345AB3E305A /* Pods-TestmyUOWD.debug.xcconfig */,
+				710B1290F23A537A8822EC8E /* Pods-TestmyUOWD.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4198F11127253F480060325A /* Build configuration list for PBXNativeTarget "TestmyUOWD" */;
 			buildPhases = (
+				189DDBCB843466F952811E63 /* [CP] Check Pods Manifest.lock */,
 				4198F0FF27253F470060325A /* Sources */,
 				4198F10027253F470060325A /* Frameworks */,
 				4198F10127253F470060325A /* Resources */,
+				4570B37D237BE4B540615429 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		189DDBCB843466F952811E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestmyUOWD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4570B37D237BE4B540615429 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestmyUOWD/Pods-TestmyUOWD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestmyUOWD/Pods-TestmyUOWD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestmyUOWD/Pods-TestmyUOWD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4198F0FF27253F470060325A /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		4198F11227253F480060325A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D510D74E5A828345AB3E305A /* Pods-TestmyUOWD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 		};
 		4198F11327253F480060325A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710B1290F23A537A8822EC8E /* Pods-TestmyUOWD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
